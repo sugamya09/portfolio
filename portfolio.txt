@@ -1,0 +1,51 @@
+export default function Portfolio() {
+  return (
+    <div className="min-h-screen bg-white text-gray-800 px-6 py-10 font-sans">
+      <header className="text-center mb-12">
+        <img src="/picc.jpg" alt="Kalva Gouthami Sugamya" className="w-32 h-32 mx-auto rounded-full mb-4 object-cover border-4 border-purple-500" />
+        <h1 className="text-4xl font-bold text-purple-700">Hi, I'm Kalva Gouthami Sugamya</h1>
+        <p className="text-lg mt-2">
+          B.Tech IT Student at G. Narayanamma Institute of Technology and Science
+        </p>
+        <p className="text-md text-gray-600 mt-1">
+          Passionate about coding, problem-solving & building meaningful solutions.
+        </p>
+        <a href="/resume_Sugamya.pdf" target="_blank" rel="noopener noreferrer" className="inline-block mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg shadow hover:bg-purple-700 transition">
+          View My Resume
+        </a>
+      </header>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">Skills</h2>
+        <ul className="list-disc list-inside text-gray-700">
+          <li>Python</li>
+          <li>C Programming</li>
+          <li>Data Structures & Algorithms</li>
+          <li>Problem Solving</li>
+        </ul>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">Projects</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div className="p-4 border rounded-xl shadow-md">
+            <h3 className="font-bold text-lg">Central Location Finder</h3>
+            <p className="text-sm text-gray-600 mt-2">
+              A web application that helps users find a central meeting point based on multiple input locations. Built using Leaflet.js, OpenStreetMap, and JavaScript. Ideal for planning meetups efficiently.
+            </p>
+          </div>
+          <div className="p-4 border rounded-xl shadow-md">
+            <h3 className="font-bold text-lg">[Project Name]</h3>
+            <p className="text-sm text-gray-600 mt-2">Short description of another project, preferably related to your core skills.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="mb-12">
+        <h2 className="text-2xl font-semibold text-purple-600 mb-4">Contact</h2>
+        <p>You can reach me at <a href="mailto:youremail@example.com" className="text-purple-700 underline">youremail@example.com</a></p>
+        <p>Or connect with me on <a href="https://www.linkedin.com/in/yourprofile" className="text-purple-700 underline">LinkedIn</a></p>
+      </section>
+    </div>
+  );
+}
